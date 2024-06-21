@@ -1,0 +1,34 @@
+.navbar {
+	display: flex;
+	justify-content: space-between;
+
+	nav {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		width: 50%;
+
+		@media #{$mid-point} {
+			#open-nav {
+				display: none;
+			}
+		}
+
+		@media (max-width: 450px) {
+			.menu-item {
+				display: none;
+			}
+		}
+		a {
+			font-size: 18px;
+			font-family: 'Pavanam';
+			text-transform: uppercase;
+			font-weight: 400;
+			
+			&.active {
+				font-weight: 600;
+			}
+		}
+	}
+
+}

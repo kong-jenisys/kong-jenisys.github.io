@@ -1,13 +1,59 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Jenisys</title>
-    <link rel="stylesheet" href="./index.css">
-  </head>
-  <body>
-  <div class="centered unfinished-container">
-    <p>WEBSITE UNDER CONSTRUCTION</p>
-  </div>
-  </body>
-</html>
+---
+title: Urban
+---
+
+<section class="hero diagonal">
+	<div class="container">
+		<h2>Property advisory and consultancy</h2>
+		<p class="subtext editable">Over 30 years of experience serving the building and construction industry in Melbourne.</p>
+		<p><a class="button alt" href="{{ site.baseurl }}/contact/">Contact Us</a></p>
+	</div>
+</section>
+
+<section class="diagonal middle">
+	<div class="container">
+		<div>
+			<h3>Our Services</h3>
+			<p>
+				<ul style="list-style-type: none;">
+					<li>Cost estimating</li>
+					<li>Project cost control</li>
+					<li>Document management</li>
+					<li>Technology and business systems</li>
+				</ul>
+			</p>
+		</div>
+	</div>
+</section>
+
+<section class="diagonal alternate">
+	<div class="container halves">
+		<div>
+			<h3 class="editable">Our work</h3>
+			<p>
+				We have experience in a wide range of project types, including:
+				<ul>
+					<li>Aged Care</li>
+					<li>Civil</li>
+					<li>Educational</li>
+					<li>Health</li>
+					<li>Industrial</li>
+					<li>Recreational</li>
+					<li>Retail</li>
+					<li>Residential</li>
+					<li>Offices</li>
+				</ul>
+			</p>
+			<p class="editable"><a href="{{ site.baseurl }}/portfolio/">View Full Portfolio &rarr;</a></p>
+		</div>
+		<div>
+			<ul class="image-grid">
+				{% for client in site.clients limit: 4 %}
+					<li><a href="{{ site.baseurl }}{{ client.url }}"><img src="{% include relative-src.html src=client.image_path %}"></a></li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</section>
+
+

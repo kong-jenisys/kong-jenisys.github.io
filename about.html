@@ -1,0 +1,20 @@
+---
+title: About
+heading: Our team
+---
+
+<section class="diagonal patterned">
+	<div class="container">
+		<div class="staff-grid">
+			{% for member in site.staff_members %}
+				<a class="staff-member" target="_blank" href="{{ member.url }}">
+					<img class="portrait" src="{% include relative-src.html src=member.image_path %}" alt="{{ member.name }}"/>
+					<div class="details">
+						<div class="name">{{ member.name }}</div>
+						<div class="position">{{ member.position }}</div>
+					</div>
+				</a>
+			{% endfor %}
+		</div>
+	</div>
+</section>
