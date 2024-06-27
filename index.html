@@ -1,11 +1,11 @@
 ---
-title: Urban
+title: Home
 ---
 
 <section class="hero diagonal">
 	<div class="container">
-		<h2>Property advisory and consultancy</h2>
-		<p class="subtext editable">Over 30 years of experience serving the building and construction industry in Melbourne.</p>
+		<h2>Property advisory and consulting</h2>
+		<p class="subtext editable">Over 30 years of experience serving the building and construction industry in Australia and Southeast Asia.</p>
 		<p><a class="button alt" href="{{ site.baseurl }}/contact/">Contact Us</a></p>
 	</div>
 </section>
@@ -18,8 +18,8 @@ title: Urban
 				<ul style="list-style-type: none;">
 					<li>Cost estimating</li>
 					<li>Project cost control</li>
-					<li>Document management</li>
-					<li>Technology and business systems</li>
+					<li>Project advisory</li>
+					<li>Cost management systems</li>
 				</ul>
 			</p>
 		</div>
@@ -33,25 +33,21 @@ title: Urban
 			<p>
 				We have experience in a wide range of project types, including:
 				<ul>
-					<li>Aged Care</li>
-					<li>Civil</li>
-					<li>Educational</li>
-					<li>Health</li>
-					<li>Industrial</li>
-					<li>Recreational</li>
-					<li>Retail</li>
 					<li>Residential</li>
-					<li>Offices</li>
+					<li>Industrial</li>
+					<li>Health and Aged Care</li>
+					<li>Educational</li>
+					<li>Retail and Hospitality</li>
+					<li>Commercial</li>
+					<li>Civil/Civic</li>
 				</ul>
 			</p>
 			<p class="editable"><a href="{{ site.baseurl }}/portfolio/">View Full Portfolio &rarr;</a></p>
 		</div>
-		<div>
-			<ul class="image-grid">
-				{% for client in site.clients limit: 4 %}
-					<li><a href="{{ site.baseurl }}{{ client.url }}"><img src="{% include relative-src.html src=client.image_path %}"></a></li>
+		<div class="project-image">
+				{% for client in site.projects limit: 1 %}
+					<img src="{% include relative-src.html src=client.image_path %}">
 				{% endfor %}
-			</ul>
 		</div>
 	</div>
 </section>

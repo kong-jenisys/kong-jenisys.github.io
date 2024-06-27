@@ -10,7 +10,7 @@ description: Jenisys advisory and consultancy
 # Author details for the jekyll-seo-tag gem
 author:
   name: Kong Yap
-  email:
+  # email:
   # twitter: # twitter username without the @ symbol
 
 # # Social details for the jekyll-seo-tag gem
@@ -24,7 +24,7 @@ timezone: Etc/UTC
 collections:
   staff_members:
     output: false
-  clients:
+  projects:
     output: true
 
 paginate: 10
@@ -58,9 +58,9 @@ defaults:
           height: 2000
   - scope:
       path: ""
-      type: "clients"
+      type: "project"
     values:
-      layout: "client"
+      layout: "project"
       _options:
         image_path:
           width: 2000

@@ -6,19 +6,17 @@ heading: Our work
 <section class="diagonal patterned">
 	<div class="container">
 		<ul class="image-grid">
-			{% for client in site.clients %}
+			{% for project in site.projects %}
 				<li>
-					<a href="{{ site.baseurl }}{{ client.url }}">
-						<img src="{% include relative-src.html src=client.image_path %}" alt="{{ person.name }}">
-						<div class="details">
-							<div class="name">{{ client.name }}</div>
-							<div class="position">{{ client.subtitle }}</div>
+						<div class="gallery-image">
+							<img src="{% include relative-src.html src=project.image_path %}" alt="{{ project.name }}">
 						</div>
-					</a>
+						<div class="details">
+							<div class="name">{{ project.name }}</div>
+							<div class="position">{{ project.subtitle }}</div>
+						</div>
 				</li>
 			{% endfor %}
-			<li class="filler"></li>
-			<li class="filler"></li>
 		</ul>
 	</div>
 </section>

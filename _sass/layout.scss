@@ -158,6 +158,27 @@ section {
 	align-items: flex-start;
 }
 
+// For portfolio
+.image-grid {
+	list-style-type: none;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	li {
+		margin: 16px 0;
+	}
+	.caption-bottom-left {
+		position: absolute;
+		bottom: 8px;
+		left: 16px;
+	}
+}
+
+// Preview on homepage
+.project-image {
+	margin: 2px;
+	overflow: hidden;
+}
 .staff-grid {
 	a:hover {
 		opacity: 0.9;
@@ -165,22 +186,35 @@ section {
 	}
 
 	.staff-member {
-		display: flex;
-		flex-direction: column;
-		align-items: center;
 
-		img {
-			width: 240px;
-			border-radius: 50%;
-		}
 		.details {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			text-align: center;
+			color: $html-background-color;
+
+			img.portrait {
+				width: 240px;
+				border-radius: 50%;
+				margin-bottom: 16px;
+			}
+			ul {
+				font-size: 1rem;
+				list-style: none;
+				padding: 0;
+			}
+			.position {
+				font-weight: 600;
+			}
 			.name {
 				font-size: 1.3rem;
 			}
-			margin-top: 12px;
-			text-align: center;
-			color: $brand-color;
+			.subtitle {
+				margin-top: 12px;
+			}
 		}
+
 	}
 
 }

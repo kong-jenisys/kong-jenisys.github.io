@@ -1,3 +1,32 @@
+.nav-open {
+	header {
+		background: #444;
+		z-index: 10;
+
+		@media #{$mid-point} {
+			background: none;
+		}
+	}
+
+	nav {
+		margin: 20px 0 0 0;
+		border: 0;
+
+		a {
+			display: block;
+		}
+
+		@media #{$mid-point} {
+			border: 0;
+			padding: 0 20px;
+
+			a {
+				display: inline;
+			}
+		}
+	}
+}
+
 .navbar {
 	display: flex;
 	justify-content: space-between;
