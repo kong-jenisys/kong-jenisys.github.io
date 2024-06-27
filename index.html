@@ -1,13 +1,55 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Jenisys</title>
-    <link rel="stylesheet" href="./index.css">
-  </head>
-  <body>
-  <div class="centered unfinished-container">
-    <p>WEBSITE UNDER CONSTRUCTION</p>
-  </div>
-  </body>
-</html>
+---
+title: Home
+---
+
+<section class="hero diagonal homepage">
+	<div class="container">
+		<h2>Property advisory and consulting</h2>
+		<p class="subtext">Over 30 years of experience serving the building and construction industry in Australia and Southeast Asia.</p>
+		<p><a class="button alt" href="{{ site.baseurl }}/contact/">Contact Us</a></p>
+	</div>
+</section>
+
+<section class="diagonal middle">
+	<div class="container">
+		<div>
+			<h3>Our Services</h3>
+			<p>
+				<ul style="list-style-type: none;">
+					<li>Cost estimating</li>
+					<li>Project cost control</li>
+					<li>Project advisory</li>
+					<li>Cost management systems</li>
+				</ul>
+			</p>
+		</div>
+	</div>
+</section>
+
+<section class="diagonal alternate">
+	<div class="container halves">
+		<div>
+			<h3 class="editable">Our work</h3>
+			<p>
+				We have experience in a wide range of project types, including:
+				<ul>
+					<li>Residential</li>
+					<li>Industrial</li>
+					<li>Health and Aged Care</li>
+					<li>Educational</li>
+					<li>Retail and Hospitality</li>
+					<li>Commercial</li>
+					<li>Civil/Civic</li>
+				</ul>
+			</p>
+			<p class="editable"><a href="{{ site.baseurl }}/portfolio/">View  some of our projects &rarr;</a></p>
+		</div>
+		<div class="project-image">
+				{% for client in site.projects limit: 1 %}
+					<img src="{% include relative-src.html src=client.image_path %}">
+				{% endfor %}
+		</div>
+	</div>
+</section>
+
+

@@ -1,0 +1,24 @@
+---
+---
+
+$screenshot-buttons: "{{ site.baseurl }}/images/screenshot-buttons.svg";
+
+$brand-color: #224968;
+$html-background-color: #222;
+$secondary-brand-color: #336c99;
+$middle-gradient-color: mix($brand-color, $secondary-brand-color, 95%);
+
+// Breakpoints
+$tablet: "(min-width: 450px)";
+$mid-point: "(min-width: 620px)";
+$desktop: "(min-width: 768px)";
+
+$section-rotation: 5deg;
+
+@import "fonts";
+@import "elements";
+@import "layout";
+@import "contact";
+@import "forms";
+@import "navigation";
+@import "footer";

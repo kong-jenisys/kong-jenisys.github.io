@@ -1,0 +1,10 @@
+- title: Pages
+  links:
+    - name: Home
+      link: /
+    - name: Portfolio
+      link: /portfolio/
+    - name: About
+      link: /about/
+    - name: Contact
+      link: /contact/

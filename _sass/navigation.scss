@@ -1,0 +1,187 @@
+// .nav-open {
+// 	header {
+// 		background: #444;
+// 		z-index: 10;
+
+// 		@media #{$mid-point} {
+// 			background: none;
+// 		}
+// 	}
+
+// 	nav {
+// 		margin: 20px 0 0 0;
+// 		border: 0;
+
+// 		a {
+// 			display: block;
+// 		}
+
+// 		@media #{$mid-point} {
+// 			border: 0;
+// 			padding: 0 20px;
+
+// 			a {
+// 				display: inline;
+// 			}
+// 		}
+// 	}
+// }
+
+// .navbar {
+// 	display: flex;
+// 	justify-content: space-between;
+
+// 	nav {
+// 		display: flex;
+// 		justify-content: space-around;
+// 		align-items: center;
+// 		width: 50%;
+
+// 		@media #{$mid-point} {
+// 			#open-nav {
+// 				display: none;
+// 			}
+// 		}
+
+// 		@media (max-width: 450px) {
+// 			.menu-item {
+// 				display: none;
+// 			}
+// 		}
+// 		a {
+// 			font-size: 18px;
+// 			font-family: 'Pavanam';
+// 			text-transform: uppercase;
+// 			font-weight: 400;
+			
+// 			&.active {
+// 				font-weight: 600;
+// 			}
+// 		}
+// 	}
+
+// }
+.nav-open {
+	header {
+		background: #444;
+		z-index: 10;
+
+		@media #{$mid-point} {
+			background: none;
+		}
+	}
+
+	nav {
+		margin: 20px 0 0 0;
+		border: 0;
+
+		a {
+			display: block;
+		}
+
+		@media #{$mid-point} {
+			border: 0;
+			padding: 0 20px;
+
+			a {
+				display: inline;
+			}
+		}
+	}
+}
+
+nav {
+	text-transform: uppercase;
+	font-size: 0.8em;
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		display: block;
+	}
+
+	@media #{$mid-point} {
+		display: flex;
+		width: auto;
+	}
+
+	a {
+		margin: 0 3px;
+		padding: 20px 10px;
+		color: rgba(255, 255, 255, 0.8);
+		transition: 0.2s ease-in-out;
+		display: none;
+		font-size: 1rem;
+
+		@media #{$mid-point} {
+			font-size: 1.2rem;
+			border-bottom: 2px solid rgba(255, 255, 255, 0);
+			display: block;
+			padding: 10px 25px;
+		}
+
+		&.nav-toggle {
+			display: inline;
+			font-size: 1.9em;
+			border: 0;
+
+			@media #{$mid-point} {
+				display: none;
+			}
+
+			&:hover {
+				border: 0;
+			}
+		}
+	}
+
+	a:hover {
+		color: #fff;
+
+		@media #{$mid-point} {
+			border-bottom: 2px solid rgba(255, 255, 255, 0.6);
+			display: block;
+			padding: 10px 25px;
+		}
+	}
+
+	@media #{$mid-point} {
+		a.highlight {
+			border: 1px #ccc solid;
+			border-radius: 5px;
+
+			&:hover {
+				background: #fff;
+				color: $brand-color;
+			}
+		}
+	}
+
+	a.active {
+		color: #fff;
+	}
+}
+
+.navbar {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	@media (max-width: 620px) {
+		display: none;
+	}
+}
+
+.navbar-mobile {
+	@media #{$mid-point} {
+		display: none;
+	}
+	#open-nav {
+		position: absolute;
+		top: 1.7rem;
+		right: 2rem;
+		font-size: 1.5rem;
+	}
+}

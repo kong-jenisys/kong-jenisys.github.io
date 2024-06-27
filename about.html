@@ -1,0 +1,16 @@
+---
+title: About
+heading: Our team
+---
+
+<section class="diagonal patterned">
+	<div class="container">
+		<div class="staff-grid">
+			{% for member in site.staff_members %}
+				<div class="staff-member">
+					{{ member.content}}
+				</div>
+			{% endfor %}
+		</div>
+	</div>
+</section>
