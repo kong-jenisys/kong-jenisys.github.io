@@ -26,10 +26,8 @@
 	<body>
 		<header>
 			<div class="container">
-				<div class="navbar">
-					<a href="/"">{% include navigation-logo.html %}</a>
-					{% include navigation.html %}
-				</div>
+				{% include navigation-desktop.html %}
+				{% include navigation-mobile.html %}
 			</div>
 		</header>
 		{{ content }}
